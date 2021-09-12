@@ -23,6 +23,10 @@ public class ComedyService {
         return jokes[i];
     }
 
+    public String[] getAllJokes() {
+        return jokes;
+    }
+
     // simple method that populates the jokes array with a few jokes
     private void populateJokes(){
         jokes[0] = "Q: Did you hear about the mathematician who’s afraid of negative numbers? " +
