@@ -20,6 +20,13 @@ public class CodingNomad {
         this.soundSystem = soundSystem;
     }
 
+ /*   @Autowired
+    public CodingNomad(SoundSystem soundSystem) {
+        this.soundSystem = soundSystem;
+    }
+
+  */
+
     @Autowired
     OperatingSystem operatingSystem;
 

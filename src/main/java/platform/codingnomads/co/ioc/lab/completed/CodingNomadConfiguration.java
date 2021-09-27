@@ -13,10 +13,10 @@ public class CodingNomadConfiguration {
         return Framework.builder().name("Spring Boot").version("2.5").build();
     }
 
-    @Bean
-    public IDE ide() {
-        return IDE.builder().name("IntelliJ IDEA").version("2021.1").build();
-    }
+   // @Bean
+   // public IDE ide() {
+      //  return IDE.builder().name("IntelliJ IDEA").version("2021.1").build();
+  //  }
 
     @Bean
     public JDK jdk() {
