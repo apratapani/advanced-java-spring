@@ -19,6 +19,8 @@ public class SpringDataLab implements CommandLineRunner {
     private final AreaRepository areaRepository;
     private final RouteRepository routeRepository;
 
+
+
     public static void main(String[] args) {
         SpringApplication.run(SpringDataLab.class);
     }
