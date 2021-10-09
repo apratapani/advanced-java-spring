@@ -5,5 +5,5 @@ import platform.codingnomads.co.springdata.lab.complete.domain.Area;
 
 public interface AreaRepository extends JpaRepository<Area,Long> {
 
-    Area findByCode(String code);
+    public Area findByCode(String code);
 }

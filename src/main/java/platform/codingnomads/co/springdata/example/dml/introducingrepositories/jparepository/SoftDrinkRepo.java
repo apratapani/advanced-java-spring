@@ -4,4 +4,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface SoftDrinkRepo extends JpaRepository<SoftDrink, Long> {
 
+    public SoftDrink findByName(String name);
+
 }
