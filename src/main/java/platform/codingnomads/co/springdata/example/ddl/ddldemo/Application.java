@@ -1,13 +1,11 @@
-package platform.codingnomads.co.springweb.gettingdatafromclient.requestparam;
+package platform.codingnomads.co.springdata.example.ddl.ddldemo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class RequestParamDemo {
+public class Application {
     public static void main(String[] args) {
-        SpringApplication.run(RequestParamDemo.class);
+        SpringApplication.run(Application.class);
     }
 }
-
-

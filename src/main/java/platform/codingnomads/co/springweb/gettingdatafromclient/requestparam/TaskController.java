@@ -21,9 +21,11 @@ public class TaskController {
         return "ID: " + id;
     }
 
-    @GetMapping(value = "/param-name-variable-name-different", produces = MediaType.APPLICATION_JSON_VALUE)
-    public String getTaskWithDifferentParamAndVariableName(@RequestParam(name = "id") Long taskId) {
-        return "ID: " + taskId;
+    @GetMapping(value = "/param-name-variable-name-different/{temp}", produces = MediaType.APPLICATION_JSON_VALUE)
+    public String getTaskWithDifferentParamAndVariableName(@RequestParam(name = "id") Long taskId,
+                                                           @RequestParam(name = "name") String name,
+                                                           @PathVariable(name="temp") String temp) {
+        return "ID: " + taskId + " name: " +  name + " temp: " + temp;
     }
 
     @GetMapping(value = "/request-param-optional", produces = MediaType.APPLICATION_JSON_VALUE)

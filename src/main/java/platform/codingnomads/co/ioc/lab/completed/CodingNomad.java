@@ -25,7 +25,7 @@ public class CodingNomad {
         this.soundSystem = soundSystem;
     }
 
-<<<<<<< HEAD
+//<<<<<<< HEAD
  /*   @Autowired
     public CodingNomad(SoundSystem soundSystem) {
         this.soundSystem = soundSystem;
@@ -33,9 +33,9 @@ public class CodingNomad {
 
   */
 
-=======
+//=======
     // field injection of the Operating System
->>>>>>> 48790b147af8d5789bf759391cb6cc97c22c5bba
+//>>>>>>> 48790b147af8d5789bf759391cb6cc97c22c5bba
     @Autowired
     OperatingSystem operatingSystem;
 
