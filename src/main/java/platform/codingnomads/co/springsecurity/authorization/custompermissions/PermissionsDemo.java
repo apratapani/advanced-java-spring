@@ -34,6 +34,7 @@ public class PermissionsDemo implements CommandLineRunner {
         User user1;
         User user2;
 
+
         if (userRepository.findAll().isEmpty()) {
             user1 = new User("user1@email.com", passwordEncoder.encode("12345678"));
             user2 = new User("user2@email.com", passwordEncoder.encode("12345678"));
@@ -41,6 +42,14 @@ public class PermissionsDemo implements CommandLineRunner {
         } else {
             user1 = userRepository.findByEmail("user1@email.com");
             user2 = userRepository.findByEmail("user2@email.com");
+        }
+      //  System.out.println("User1 getClass is " + user1.getClass());
+     //   System.out.println("User1 getType is " + user1.getClass().getTypeName());
+
+        if(!userRepository.existsUserByEmail("apratapani@gmail.com")) {
+            User user3 = new User("apratapani@gmail.com", passwordEncoder.encode("1234"));
+            userRepository.save(user3);
+            authRepository.save(new MyGrantedAuthority(user3.getClass().getTypeName(), user3.getId(), "READ"));
         }
 
         if (authRepository.findAll().isEmpty()) {
